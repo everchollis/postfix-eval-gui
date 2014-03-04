@@ -1,7 +1,7 @@
 //======================================\\
 ||                                      ||
 ||     Postfix Arithmetic Evalutator    ||
-||                 1.0                  ||
+||                 2.0                  ||
 ||          By: Connor Hollis           ||
 \\======================================//
 
@@ -9,15 +9,18 @@ Apologies for the fancy box.
 
 Evaluates Postfix Arithmetic expressions.
 
+In order for Doubles to work, they must be separated by a space.
+
 Contains:
 	PostFixUtil: driver class. creates a new EvaluationFrame.
 
 	EvaluationFrame: GUI class. constructs GUI which runs the Evaluator class.
 
-	Evaluator: Contains method for the evaluation of a postfix expression. (3/2/14: Works only on integers)
+	Evaluator: Contains method for the evaluation of a postfix expression.
 
 	Stack: An implementation of the data structure known as a Stack. Based off of the Stack<T> class in Dr. Sesh Venugopal's "Data Structures Outside In with Java" textbook. Modifications include the use of an ArrayList instead of a LinkedList, and the creation of a peek() method as opposed to the next() method in the book.
 
 	IllegalExpressionException: empty exception class.
 
-	Version 1.0: Bare bones visual, works only on integers.
+	Version 1.0: Bare bones visual, works only on one-digit integers.
+	Version 2.0: Bare bones visual, works on Doubles and integers, though correct multi-digit integers will require the use of the Double evaluator. Found and fixed a divide by 0 error with the integer evaluator.
